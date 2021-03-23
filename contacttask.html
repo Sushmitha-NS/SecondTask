@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/mycss.css">
+<script>
+ function testVariable() {
+       
+            var strText = document.getElementById("txtName").value;
+            var strText1 = document.getElementById("txtEmail").value;
+			var strText2 = document.getElementById("txtphonenumber").value;
+            document.getElementById("p1").innerHTML = strText;
+            document.getElementById("p2").innerHTML = strText1;
+			document.getElementById("p3").innerHTML = strText2;
+
+
+        }
+</script>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form name="myForm">
+   
+      NAME:  <input type="text" name="name" id="txtName" placeholder=" Your Name" onkeypress="return /[a-z A-Z]/i.test(event.key)" required><br><br>
+      EMAIL: <input type="text" name="email" id="txtEmail" placeholder="eg: john@gmail.com" value="@gmail.com" required><br><br>
+	  PHONE NUMBER:  <input type="number" name="Phonenumber" id="txtphonenumber" placeholder="Your Phone number"  pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==10) return false;" required><br><br>
+        <input type="button" value="Submit" id="btnSubmit" onclick="testVariable()"><br><br>
+    </form>
+  
+</div>
+  <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+		<p id="p3"></p>
+    </div>
+
+</body>
+
+</html>
