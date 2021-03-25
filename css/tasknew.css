@@ -1,0 +1,79 @@
+body {
+    background-color: blue;
+}
+
+.navbar {
+    background-color: #153e90;
+    border-radius: 30px;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 23px;
+}
+
+.navbar ul {
+    overflow: auto;
+
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar li a:hover {
+    background-color: #e2bcb7;
+
+}
+
+#showcase::before {
+    background: url('/images/man.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#showcase .button {
+    font-size: 24px;
+    text-decoration: none;
+    color: #153e90;
+    border: white 1px solid;
+    padding: 10px 10px;
+    margin-right: 1225px;
+    margin-left: 10px;
+    border-radius: 20px;
+    margin-top: 204px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+
+}
+
+#showcase .button:hover {
+    background-color: #e2bcb7;
+    color: #fff;
+}
+
+#showcase div {
+    font-size: 19px;
+}
+
+#showcase .column {
+    float: left;
+    padding: 5px;
+}
+
+/* #showcase .row::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
