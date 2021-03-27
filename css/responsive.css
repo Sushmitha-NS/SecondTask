@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* navigation bar */
+#navbar{
+    display:flex; /* this is used to align items in a single row*/
+    align-items: center;
+    position:relative;
+}
+
+/*it will set the background value of the navbar*/
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.4;
+}
+/*it will give margin to the logo*/
+#logo{
+    margin:10px 34px;
+}
+
+/*this will give the margin, height*/
+#logo img{
+    margin:3px 6px;
+    height:50px;
+}
+
+/*it will set the display valur of navabar to flex so it will get align properly*/
+#navbar ul{
+    display:flex;
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display:block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color:white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: #062d79;
+}
+
+/* styling home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 560px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../images/17.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1; /*For a positioned box, the 'z-index' property specifies the stack level of the box in the current stacking context and whether the box establishes a local stacking context.*/
+    opacity:1; /*Opacity of an element's text, where 1 is opaque and 0 is entirely transparent.*/
+}
+
+
+#home p{
+    color:#062d79;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+.primary{
+    font-size: 3.8rem;
+    padding:12px;
+    font-family: 'Bree Serif', serif;
+    color:#062d79;
+    text-align: center;
+}
+
+/* styling button */
+.btn{
+    padding: 6px 20px; /*used for spacing*/
+    border: 2px solid white;
+    background-color: #062d79;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;  /*rem is different unit which is not static*/
+    border-radius: 10px;
+    cursor:pointer; /*it will convert the mouse pointer to finger pointer*/
+}
