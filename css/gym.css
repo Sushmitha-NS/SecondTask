@@ -2,7 +2,7 @@ body{
     color: white;
     margin: 0px;
     padding: 0px;
-    background:url('/images/training-828741_1920.jpg')
+    background:url('../images/training-828741_1920.jpg')
 }
 .left {
     display: inline-block; /* used to fix the content towards left*/
