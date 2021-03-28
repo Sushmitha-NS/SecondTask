@@ -1,0 +1,109 @@
+body{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background:url('/images/training-828741_1920.jpg')
+}
+.left {
+    display: inline-block; /* used to fix the content towards left*/
+    position: absolute;/* used to fix the content towards left*/
+    left: 60px;
+    top: 20px;
+}
+.left img {
+    width: 49px;
+    filter: invert(100%); /* this css function  makes the image to change its color to white if image is already in white it makes it blank*/
+    margin-top:9px;
+}
+
+.left div {
+    line-height: 19px;
+    font-size: 17px;
+    text-align: center;   /* this makes the text below the logo to allign at center */
+    
+}
+
+.mid {
+    display: block; /* to make the content at center initially set display to block soon you have to set width and margin keeping x axis in auto stage*/
+    width: 40%;
+    margin: 35px auto;
+    
+}
+
+.right {
+    position: absolute; /* this takes the content towards right corner */
+    right: 34px;/* this takes the content towards right corner */
+    top: 43px;               /* this takes the content towards right corner */
+    display: inline-block;
+  
+}
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;  /* this alligns content of nav bar to a single row*/
+    font-size: 20px;
+    font-family:  'Bree Serif', serif;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none; /* removes underline*/
+    padding: 40px 8px;
+    
+
+}
+
+.navbar li a:hover,
+.navbar li a.active {              /* this makes home content to be in active stage*/
+    text-decoration: underline;   /* this makes the content underlined when we keep cursor upon it*/
+    color:#2ee3f6;
+
+}
+
+.btn {
+    font-family:  'Bree Serif', serif;
+    margin: 7px 13px;
+    background-color: black;
+    color: white;
+    padding: 1px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:#2ee3f6;
+}
+
+.container {
+    border: 2px solid white;
+    margin: 98px 23px;
+    padding: 51px;
+    width: 22%;
+    border-radius: 28px;
+    height:347px;
+}
+.form-group input {
+    font-family:  'Bree Serif', serif;
+    text-align: center;
+    display: block;
+    width: 311px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 6px auto;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
