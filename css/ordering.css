@@ -16,6 +16,7 @@ html{
     align-items: center;  /* aligns all content in center of the  row */
     position: sticky; /*A sticky element toggles between relative and fixed , depending on the scroll position*/
     top: 0px;  /* this property is done for safer side to not having any extra spaces  */
+    z-index: 1; /*this will set the navigation menu top in the z-index stack*/
 }
 /* this is done to display the content before the color */
 #navbar::before{
