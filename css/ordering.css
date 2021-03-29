@@ -1,0 +1,261 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;   /* when you click on nav bar content it directly and smoothly moves to that section */
+}
+
+
+
+/* Navigation Bar */
+#navbar{
+    display: flex; /* aligns all content in particular row */
+    align-items: center;  /* aligns all content in center of the  row */
+    position: sticky; /*A sticky element toggles between relative and fixed , depending on the scroll position*/
+    top: 0px;  /* this property is done for safer side to not having any extra spaces  */
+}
+/* this is done to display the content before the color */
+#navbar::before{
+    content: "";
+    background-color: #3d2c2c;
+    position: absolute; /* this is done to add zindex to content */
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1; /* this property display the content before the colo  */
+    opacity: 0.7;  /* this dims the background color */
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 2px 10px;
+}
+
+#logo img{
+    height: 74px;
+    margin: 3px 6px;
+    width:114px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;   /* aligns content in a row */
+    font-family:  'Bree Serif', serif;    /* provides styling to font */
+}
+
+#navbar ul li{ 
+    list-style: none; /* removes bullets */
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;   /* this displays content by taking entire width default it will be inline. This is done to set padding */
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none; /* removes underline below the content */
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: #d44000;
+}
+
+/* Landing page Section */
+#landing{
+    display: flex;   /* aligns content  */
+    flex-direction: column;  /* specifies how items are placed in flex container*/
+    padding:3px 200px;
+    height: 550px; /* to place img onside nav bar */
+    justify-content: center;
+    align-items: center;
+}
+
+#landing::before{ 
+    content: "";
+    position: absolute;  /* this is done to add zindex to content */
+    background: url('/images/tomato-2776824_1920.jpg') no-repeat center center/cover;
+    height: 642px;  /* to place img onside nav bar */
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;  /* this property display the content before the image  */
+    opacity:0.89; /* this dims the background image */
+}
+/* styling h1  */
+
+#landing h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+/* styling p  */
+#landing p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Utility Classes */
+.primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+/* styling button  */
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: grey;
+    color:black;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+/* Utility Classes */
+.secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+/* services section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+/* styling the service box */
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #be9494;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px; /* setting height of img */
+   margin: auto;  /* places the image at center */
+   display: block;  /* if displace is block then only you can set margin:auto so that img is places at center */
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+
+} 
+.center{
+    text-align: center;
+}
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+/* to display background image */
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('/images/food-2972974_1920.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;  /* aligning in a row */
+    justify-content: center; /* justify contents to center */
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px; /* spaces between images */
+}
+
+#clients img{
+    height: 124px; /* height of the image */
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+/* to display dim image for this section  */
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/images/contac.jpg') no-repeat center center/cover;
+
+}
+/* styling the contact information  */
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+/* styling the input section  */
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+/* this sets the width of the form according to criteria  */
+#contact-box form{
+    width: 40%;
+}
+/* this sets the size and style of lable such as name ,phone number etc  */
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+/* socialmedia section */
+#social{ 
+    position: relative;
+}
+/* to display background image */
+#social::before{
+ content: "";
+ position: absolute;
+ background: url('/images/food-2972974_1920.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#socials{
+    display: flex;  /* aligning in a row */
+    justify-content: center; /* justify contents to center */
+    align-items: center;
+}
+
+.social-item{
+    padding: 34px; /* spaces between images */
+}
+
+#socials img{
+    height: 124px; /* height of the image */
+}
+
+
+
